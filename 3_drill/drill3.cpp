@@ -65,15 +65,15 @@ int main(){
 			cout << "The smaller value is: " << a << endl;
 		}else if(a == b){
 			cout << "The numbers are equal." << endl;
-		}else if(a % b < 1 % 100){
+		}else if(a - b < 0.01){
 			cout << "The numbers are almost equal" << endl;
 		}*/
 
 	}
 	cout << endl << "The smallest value: " << minn << endl;
 	cout << "The largest value: " << maxx << endl;
-	cout << "sum = " << sum << endl << endl;
-
+	cout << "sum = " << sum << endl;
+	cout << "The number of values: " << values.size() << endl << endl;
 
 	sort(values);
 	for(int i = 0; i < values.size(); i++){
